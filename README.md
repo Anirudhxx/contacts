@@ -22,8 +22,8 @@ npm install
 Create a .env file in the root of the project and add your MongoDB URI:
 
 ```env
-    MONGODB_URI=mongodb+srv://username:password@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority
-    PORT=3000
+MONGODB_URI=mongodb+srv://username:password@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority
+PORT=3000
 ```
 
 ## Running the Application
@@ -31,8 +31,8 @@ Create a .env file in the root of the project and add your MongoDB URI:
 ### Start the application:
 
 ```bash
-    npm start
-    The application should now be running at http://localhost:3000 
+npm start
+The application should now be running at http://localhost:3000 
 ```
 ## Docker
 
