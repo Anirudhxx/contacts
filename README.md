@@ -1,34 +1,23 @@
 # My Express App with MongoDB and Docker
 
 This project is a simple Node.js and Express application connected to a MongoDB database. The app provides an endpoint to identify contacts by their email and phone number. This project is containerized using Docker, and the steps to build and publish the Docker image are included.
-## Table of Contents
 
-    Installation
-    Configuration
-    Running the Application
-    Docker
-        Building the Docker Image
-        Running the Docker Container
-        Publishing the Docker Image
-    API Endpoint
-    License
+## Installation
 
-Installation
-
-Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/your-repo/my-express-app.git
 cd my-express-app
 ```
 
-Install dependencies:
+### Install dependencies:
 
 ```bash
 npm install
 ```
 
-Configuration
+### Configuration
 
 Create a .env file in the root of the project and add your MongoDB URI:
 
@@ -56,13 +45,13 @@ docker build -t contacts .
 ```
 ## Running the Docker Container
 
-Run the Docker container:
+### Run the Docker container:
 
 ```bash
 docker run -p 3000:3000 --env-file .env contacts
 ```
 
- Publishing the Docker Image
+## Publishing the Docker Image
 
 Log in to Docker Hub:
 
@@ -79,11 +68,11 @@ docker tag my-express-app your-dockerhub-username/my-express-app:latest
 Push the Docker image to Docker Hub:
 
 ```bash
-    docker push your-dockerhub-username/my-express-app:latest
+docker push your-dockerhub-username/my-express-app:latest
 ```
-API Endpoint
+## API Endpoint
 
-Identify Contact
+### Identify Contact
 
     URL: /identify
     Method: POST
